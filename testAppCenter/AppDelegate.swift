@@ -28,6 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ])
         Swift.print("TTT canImport AppCenter")
         #endif
+
+        #if targetEnvironment(macCatalyst)
+        Swift.print("TTT catalyst")
+        MSAnalytics.trackEvent("Launch Catalyst")
+        #endif
+
         return true
     }
 
