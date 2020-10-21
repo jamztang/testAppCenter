@@ -49,6 +49,7 @@
 		1A97B284253FD0960090EAF9 /* testAppCenterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testAppCenterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A97B288253FD0960090EAF9 /* testAppCenterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testAppCenterUITests.swift; sourceTree = "<group>"; };
 		1A97B28A253FD0960090EAF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A97B299253FD0AD0090EAF9 /* testAppCenter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testAppCenter.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		1A97B265253FD0940090EAF9 /* testAppCenter */ = {
 			isa = PBXGroup;
 			children = (
+				1A97B299253FD0AD0090EAF9 /* testAppCenter.entitlements */,
 				1A97B266253FD0940090EAF9 /* AppDelegate.swift */,
 				1A97B268253FD0940090EAF9 /* SceneDelegate.swift */,
 				1A97B26A253FD0940090EAF9 /* ViewController.swift */,
@@ -436,15 +438,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = testAppCenter/testAppCenter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5BVQ8XRL4;
 				INFOPLIST_FILE = testAppCenter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.goodnotes.testAppCenter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -455,15 +460,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = testAppCenter/testAppCenter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5BVQ8XRL4;
 				INFOPLIST_FILE = testAppCenter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.goodnotes.testAppCenter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
