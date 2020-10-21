@@ -7,6 +7,12 @@
 
 import UIKit
 
+#if canImport(AppCenter)
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
+#endif
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -14,6 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        #if canImport(AppCenter)
+        MSAppCenter.start("6886f62e-693a-48d1-a656-6f961daec622", withServices:[
+          MSAnalytics.self,
+          MSCrashes.self
+        ])
+        Swift.print("TTT canImport AppCenter")
+        #endif
         return true
     }
 
