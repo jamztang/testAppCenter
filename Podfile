@@ -6,7 +6,7 @@ target 'testAppCenter' do
   use_frameworks!
 
   # Pods for testAppCenter
-  pod 'AppCenter', '~> 3.3.4'
+  # pod 'AppCenter', '~> 3.3.4'
 
   target 'testAppCenterTests' do
     inherit! :search_paths
